@@ -17,6 +17,7 @@ function platzom(str){
   }
 
 
+
   const reverse = str => str.split("").reverse().join("");
     //regla 4
   if(str==reverse(str)) {
