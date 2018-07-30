@@ -7,7 +7,8 @@ const triangleArea= (base,height) => base * height/2;
 
 console.log(`El area de un triangulo de base 5 y altura 7 es:  ${triangleArea(base,height)}`);
 
-/*function triangleArea(base,height) {
+/*//forma tradicional
+function triangleArea(base,height) {
   return base * height/2;
 }
 console.log(`El area de un triangulo de base 5 y altura 7 es:  ${triangleArea(base,height)}`);

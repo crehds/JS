@@ -6,7 +6,7 @@ function platzom(str){
     let translation="";
     let capitalize = true
     for (let i = 0;i<length;i++){
-      const char =str.charAt(i);ç
+      const char =str.charAt(i);
 
     //operador ternario ? simboliza verdadero : simboliza falso
       translation += capitalize ? char.toUpperCase() : char.toLowerCase();
@@ -15,8 +15,6 @@ function platzom(str){
     }
     return translation;
   }
-
-
 
   const reverse = str => str.split("").reverse().join("");
     //regla 4
@@ -42,9 +40,6 @@ function platzom(str){
      translation = firstHalf+"-"+secondHalf;
      //;
    }
-
-
-
 
 return translation;
 }

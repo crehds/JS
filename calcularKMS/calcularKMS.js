@@ -1,6 +1,5 @@
-
-const nombre ='Sacha';
-const dias=[
+const NOMBRE ='Sacha';
+const DIAS=[
   'lunes',
   'martes',
   'miercoles',
@@ -8,22 +7,23 @@ const dias=[
   'viernes',
   'sabado',
   'domingo'
+
 ];
 /*el codigo entre llaves se ejecutara mientras la
 condicion internea sea verdadera y tantas veces sea necesario
 */
 function correr(){
-  const min = 5;
-  const max = 15;
+  let  min = 5;
+  let max = 15;
   return Math.round(Math.random() * (max-min)) + min;
 }
 
 let totalKms = 0;
-const size=dias.length;
+let size=DIAS.length;
 for (let i=0; i < size;i++){
-  const kms = correr();
+  let kms = correr();
   totalKms += kms;
-  console.log("El dia "+dias[i]+" "+ nombre+" corrio "+kms);
+  console.log("El dia "+DIAS[i]+" "+ NOMBRE+" corrio "+kms);
   }
-const promedio =totalKms/size;
-console.log(`En promedio, ${nombre} corrio ${promedio.toFixed(2)}`);
+let promedio =totalKms/size;
+console.log(`En promedio, ${NOMBRE} corrio ${promedio.toFixed(2)} Kms`);

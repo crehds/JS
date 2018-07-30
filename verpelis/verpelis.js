@@ -1,11 +1,11 @@
-const starWars7 ='Star wars: El despertar de la fuerza';
-const pgStarWars7 = 13;
+let starWars7 ='Star wars: El despertar de la fuerza';
+let pgStarWars7 = 13;
 
-const nameCarlos = 'Carlos';
-const ageCarlos ='24';
+let nameCarlos = 'Carlos';
+let ageCarlos ='24';
 
-const nameLeo = 'Leo';
-const ageLeo ='10';
+let nameLeo = 'Leo';
+let ageLeo ='10';
 
 function canWatchStarWars7(name,age,isWithAdult=false) {
   if(age >= pgStarWars7 ){
