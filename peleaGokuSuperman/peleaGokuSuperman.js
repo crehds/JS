@@ -4,23 +4,19 @@ let vidaSuperman =100;
 const MIN_POWER =5;//POR BUENA PRACTICA EN MAYUS
 const MAX_POWER =12;
 
-
 //retorna verdadero si la vida de goku y superman son mayores de 0
 //sino falso
-const ambosSiguenVivos = () => vidaGoku>0 && vidaSuperman>0;
-
-
-const calcularGolpe = () => Math.round(Math.random()*(MAX_POWER-MIN_POWER))+MIN_POWER;
-
-const gokuSigueVivo = () => vidaGoku >0;
+let ambosSiguenVivos = () => vidaGoku>0 && vidaSuperman>0;
+let calcularGolpe = () => Math.round(Math.random()*(MAX_POWER-MIN_POWER))+MIN_POWER;
+let gokuSigueVivo = () => vidaGoku >0;
 
 let round = 0;
 
 while(ambosSiguenVivos()){//mientras que hacer lo de las llaves
   round++;
   console.log('Round '+round);
-  const golpeGoku =calcularGolpe();
-  const golpeSuperman=calcularGolpe();
+  let golpeGoku =calcularGolpe();
+  let golpeSuperman=calcularGolpe();
 
   if(golpeGoku>golpeSuperman){
     //ataca goku
