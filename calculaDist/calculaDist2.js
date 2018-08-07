@@ -1,12 +1,8 @@
 const p1 ={
   x:0,
   y:4,
-
-  //el this referencia que la segunda x pertenece a la function
-  //osea al ambito donde esta no a la x anterior.
   /*moverEnX: function(x){this.x +=x},
   moverEnY: function(y){this.y +=y}*/
-
   moverEnX(x){
     this.x +=x;
   },
