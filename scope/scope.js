@@ -30,11 +30,12 @@ function saludar(){
     console.log("hola "+nombre);
 }*/
 
-function saludar10(nombre){
-    for(let i=0;i<10;i++){
-    console.log("hola "+nombre);
+function saludar10(nombre) {
+  for (let i = 0; i < 10; i++) {
+    console.log('hola ' + nombre);
   }
-  console.log(`el valor de i es: ${i}`);//mostrara error
+
+  console.log(`el valor de i es: ${i}`); //mostrara error
 }
 
-saludar("Eduardo");
+saludar('Eduardo');

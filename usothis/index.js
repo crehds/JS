@@ -1,28 +1,28 @@
 class Toggable {
-  constructor(el) {// cuando se hace referencia a lo que se
+  constructor(el) { // cuando se hace referencia a lo que se
     // recibe del button se acostumbra a encontrar button,el,element
     // inicializa el estado interno
     this.el = el;
-    this.el.innerHTML='Off';
-    this.actividad =false;
+    this.el.innerHTML = 'Off';
+    this.actividad = false;
     //this.onClick  = this.onClick.bind(this); una variante
-    this.el.addEventListener("click",this.onClick.bind(this));
+    this.el.addEventListener("click", this.onClick.bind(this));
     //el addEventListener define el this hacia el button no hacia
     //la instancia miBoton y lo que se necesita es hacia este ultimo
   }
-  onClick(){
+  onClick() {
     //cambiar el estado interno
     // llamar a toggleText
-    this.activated =!this.activated;
+    this.activated = !this.activated;
     this.toggleText();
   }
-  toggleText(){
+  toggleText() {
     //cambia el texto
-    this.el.innerHTML= this.activated ? 'On' : 'Off';
-   }
+    this.el.innerHTML = this.activated ? 'On' : 'Off';
+  }
 }
 
-const button =document.getElementById("boton");
+const button = document.getElementById("boton");
 
 const miBoton = new Toggable(button);
 
