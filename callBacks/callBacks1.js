@@ -13,7 +13,7 @@ function get(URL, callback) {
         callback(null, JSON.parse(this.responseText));
       } else {
         //hubo un error
-        callback(newError(`Se produjo un error al realizar el request ${this.status}`));
+        callback(new Error(`Se produjo un error al realizar el request ${this.status}`));
       }
     }
   };
@@ -42,6 +42,7 @@ get('https://www.swapi.co/api/people/1/', function onResponse(err, luke) {
     console.log(`${luke.name} nació en ${luke.homeworld.name}`);
   });
 
+  //demasiados callbacks representan el problema callback hell
   console.log(`Request succeded`);
   console.log('luke', luke);
 
