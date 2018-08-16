@@ -7,7 +7,7 @@ console.log(`Hola`);
 /*Esta funcion se añadira a la cola de tareas(task queue),
 para luego ser ejecutada cuando todas las lineas
 de codigo se ejecuten*/
-setTimeout(function() {
+setTimeout(function () {
     //setTimeout sirve para establecer tareas asincronas
     //con esto se puede llamar a por ejemplo otra API
     console.log(`Medio`);
@@ -23,7 +23,7 @@ console.log(`Holi x2`);
 //Medio
 
 console.log(`Hola`);
-setTimeout(function() {
+setTimeout(function () {
     console.log(`Medio`);
   },
 
