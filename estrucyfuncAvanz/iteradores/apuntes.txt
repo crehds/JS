@@ -1,0 +1,18 @@
+iteradores de javascript
+
+Con respecto al codigo en atom
+
+la forma 1: queda totalmente entendida, pero su no es implementable para grandes procesos pues se requiere muchas llamadas individuales
+- se usan closures y la funcion retorna un metodo el cual a su vez retorna dos propiedades
+
+en este caso se crea al metodo iterador , que en codigo es una funcion que puede llevar por nombre cualquier string, tanto como sus atributos pueden tener strings cualesquiera.
+
+forma 2:
+
+-forma adeacuada de implementar una funcion para muchos casos iterables. No osbtante queda pendiente el uso de System.iterator.
+- Solo se entiende que de cambiar el nombre de la funcion a next y el segundo return cambiar el valor de value, el codigo no ejecutara lo deseado. Se entiende la logica y gran parte del funcionamiento.
+
+*espero poder entenderlo con el tiempo.
+
+Documentacion
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols
