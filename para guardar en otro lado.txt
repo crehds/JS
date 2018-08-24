@@ -1,0 +1,6 @@
+creando un paquete npm
+
+
+documentacion:
+
+https://semver.org/
