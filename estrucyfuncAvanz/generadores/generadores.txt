@@ -1,0 +1,16 @@
+generadores 
+
+- Los generadores son funciones de las que se puede salir y volver a entrar.(de la documentacion)
+- Se tiene que declarar con *, despues de la palabra function para que JS lo interprete como generador
+- se visualiza con console.log que es un objeto de tipo generador
+- La palabra reservada yield es necesaria para que se cumpla el concepto de generador.(funcionamiento en atom)
+-yield es una palabra reservada , que internamente tiene como funcionamiento, ademas de detener la ejecucion, puede retornar un valor y tambien adquirir un parametro y asignarlo a una variable(por ejemplo), para 
+otra determinada accion que se desee.(funcionamiento en atom)
+
+
+
+
+
+Documentacion:
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/function*

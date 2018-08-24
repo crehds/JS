@@ -1,0 +1,15 @@
+estructura de datos inmutables
+
+- Se usa el comparador "===" el cual en la mayoria de casos sirve para comparar objetos. Este comparador al usarlo, el resultado debe interpretarse como true, si lo argumentos comparados apuntan a la misma direccion de memoria, caso contrario para el resultado false.
+
+*Ejemplo en atom 
+
+- side effect quiere decir un efecto secundario el cual como programadores se debe evitar. Mas a detalle si se definde una funcion suma, que sumara unos datos, esta no tiene porq hacer otra cosa como modificar una variable global(la cual estaria fuera de su scope).
+
+- Al hecho de buscar solucionar los side effects, se dice que se busca la inmutabilidad de los datos, que no cambien de no ser necesario y de no ser que nos encontremos en la funcion o instruccion que tiene que modificarlos.
+
+- En programacion pura a las funciones que respetan la inmutabilidad se les llama inmutabilidad. solo modifican variables locales y no modifica nada fuera de su scope, ni tampoco los argumentos que recibe.
+
+documentacion para saber mas de inmutabilidad
+
+https://facebook.github.io/immutable-js/
